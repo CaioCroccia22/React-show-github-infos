@@ -23,9 +23,7 @@ function Teste() {
       <h1>ola</h1>
       <Botao principal>Clique aqui</Botao>
       <Botao principal={false}>Cancelar</Botao>
-      <BotaoPerigo as="a" principal={false}>
-        <span>Não Clique aqui</span>
-      </BotaoPerigo>
+      <BotaoPerigo as="a" principal={false}></BotaoPerigo>
     </>
   )
 }
