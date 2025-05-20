@@ -5,6 +5,6 @@ export const GithubSecao = styled.div`
   margin-bottom: 64px;
 
   img {
-    heigth: 157px;
+    height: 170px;
   }
 `
