@@ -3,7 +3,11 @@ import Avatar from '../../components/Avatar/Index'
 import Paragraph from '../../components/Paragraph/Paragraph'
 import { Descricao, BotaoTema, SidebarContainer } from './styles'
 
-const Sidebar = () => {
+export type Props = {
+  func?: () => void
+}
+
+const Sidebar = (props: Props) => {
   return (
     <aside>
       <SidebarContainer>
@@ -13,7 +17,7 @@ const Sidebar = () => {
           Caio Croccia
         </Paragraph>
         <Descricao fontSize={12}>Engenheiro Front-End</Descricao>
-        <BotaoTema>Trocar Tema</BotaoTema>
+        <BotaoTema onClick={props.func}>Trocar Tema</BotaoTema>
       </SidebarContainer>
     </aside>
   )
